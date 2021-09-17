@@ -1,5 +1,5 @@
 /***************************************
-* EECS2031A 21SU - Lab1 *
+* EECS2031AC 21F – Lab1 *
 * Author: Rahman, Mahfuz *
 * Email: mafu@my.yorku.ca *
 * eecs_username: mafu *
@@ -23,13 +23,20 @@ int main()
    greet(a);
    int b = 1012;
    greet(b);
-   printf("Enter two float numbers separated by ##: ");
+
+   int interaction;
+   printf("Enter the number of interactions: ");
+   scanf("%d", &interaction);
+   
+   while (interaction!=0)
+   {
+   printf("\nEnter two float numbers separated by ##: ");
    float x,y;
    scanf("%f##%f",&x,&y);
    float su= sum(x,y);
-   printf( "%f + %f = %f\n", x,y, su);
+   printf( "%f + %f = %f (%.2f)\n", x,y, su, su);
+   interaction--;
+   }
 
    return 0;
 }
-
-

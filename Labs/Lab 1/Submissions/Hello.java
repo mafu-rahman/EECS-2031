@@ -1,3 +1,11 @@
+/***************************************
+* EECS2031AC 21F – Lab1 *
+* Author: Rahman, Mahfuz *
+* Email: mafu@my.yorku.ca *
+* eecs_username: mafu *
+* York Student #: 217847518
+****************************************/
+
 import java.util.Scanner;
 
 public class Hello {

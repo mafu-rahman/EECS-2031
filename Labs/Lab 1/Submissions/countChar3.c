@@ -1,5 +1,5 @@
 /***************************************
-* EECS2031A 21SU - Lab1 *
+* EECS2031AC 21F – Lab1 *
 * Author: Rahman, Mahfuz *
 * Email: mafu@my.yorku.ca *
 * eecs_username: mafu *
@@ -15,11 +15,10 @@ main(){
   c = getchar();
   while(c != EOF) /* no end of file*/
   { 
-    count++; //include spaces and '\n'
-    putchar(c);
+    if (c != '\n'){
+      count++;
+    }
     c = getchar(); /* read next */
   }
   printf("# of chars: %d\n",count);
-
 }
-
