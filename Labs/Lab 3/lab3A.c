@@ -12,7 +12,7 @@ main (){
 
    //str[15] = 'a';
 
-
+  
    scanf("%s", str);
 
    while ( str != "quit"){ 

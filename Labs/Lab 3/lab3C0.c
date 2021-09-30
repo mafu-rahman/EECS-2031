@@ -37,7 +37,7 @@ int main () {
   int a=0;
   while (a < 100){
     printf("hello %d\n", a);
-    if (a=8)
+    if (a==8)
       break;
     a++;
   }
