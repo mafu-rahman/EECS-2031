@@ -30,10 +30,10 @@ int main() {
 
 
      printBinary(abc); printf("  %d\n", abc);
-     printBinary(077);  printf("  077\n&\n");printBinary( abc & 077); printf("  keep lower 6 bits, turn off others\n\n\n");
+     printBinary(077);  printf("  0177\n&\n");printBinary( abc & 077); printf("  keep lower 6 bits, turn off others\n\n\n");
 
      printBinary(abc); printf("  %d\n", abc);
-     printBinary(~077); printf("  ~077\n&\n");printBinary( abc & ~077); printf("  turn lower 6 bits off, keep others\n\n\n");
+     printBinary(~077); printf("  ~0177\n&\n");printBinary( abc & ~077); printf("  turn lower 6 bits off, keep others\n\n\n");
 
      printf("Enter a number (-1000 to quit): ");
      scanf("%d",&abc); // read again
@@ -73,4 +73,3 @@ void printBinary(int n ){
       }
    }
 }
-
