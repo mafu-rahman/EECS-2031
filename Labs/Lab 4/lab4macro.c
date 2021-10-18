@@ -3,7 +3,7 @@
 
 #define MY_PRINT(x,y) printf("%d -> %d\n", x,y)
 
-#define SQUARE(x)  x * x
+#define SQUARE(x)  ((x) * (x))
 
 
 int main(int argc, char *argv[])
@@ -19,17 +19,15 @@ int main(int argc, char *argv[])
 
     resu = SQUARE(i + j);
     MY_PRINT(i+j, resu);
-
-  /* 
+ 
     int over = 1000/SQUARE(i+j);
     printf("%d\n", over);
     double oneover = 1.0/SQUARE(i+j);
     printf("%.4f\n", oneover);
-  */
 
     printf("This is file %s, line %d, run on  %s %s\n\n",__FILE__, __LINE__,__DATE__, __TIME__);
   
-   // system ("ls -l");
+    system ("ls -l");
 
     return 0;
 }

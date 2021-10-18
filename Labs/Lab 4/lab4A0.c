@@ -20,22 +20,22 @@ int main()
     modify();
     printf("x:%d  y:%d\n", x,y);
 
+    int a;
     if (y != 10){
-      int a = y;
+      a = y;
     }
-//    printf("a: %d\n", a);
+    printf("a: %d\n", a);
  
 
-  /*  int k;
+    int k;
     for(k=0; k<SIZE; k++)
        aFun();
-  */
 
     return 0;
 }
 
 void aFun (void) {
-    int counter = 100;
+    static int counter = 100;
     int b;
     printf("aFun() called, counter is %d, b is %d\n", counter, b);
     

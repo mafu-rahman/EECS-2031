@@ -1,5 +1,5 @@
 int x;   // define a global variable
-int y;   // define a global variable
+static int y;   // define a global variable
 
 void modify (void) // define a function
 {
