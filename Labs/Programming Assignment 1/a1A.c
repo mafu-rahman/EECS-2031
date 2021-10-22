@@ -8,21 +8,19 @@ int main(){
   int c;
   int value;
   int resu[SIZE];
-  ...
+  int index = 0;
 
   c = getchar();
   while ( c != EOF){ 
-    ...
   
-    if (c ==  ...     )
+    if (c >= '0' && c <= '9')
     { 
-         ... 
-         // now put current the value into resu
-         .... 
-
+         resu[index] = c;
+         index++;
+         resu[index] = c;
+         index++;
     }  
 
-   ....  
    
   }
  
