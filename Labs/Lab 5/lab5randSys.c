@@ -4,7 +4,7 @@
 int main(int argc, char *argv[])
 {
 
-    //srand(time(0));
+    srand(time(0));
     int i;
     for( i = 0; i<5; i++)
         printf(" %d ", rand() );
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
     
     printf("\n");
 
-/*    printf("current location: \n");
+    printf("current location: \n");
 
     system("pwd");
     
@@ -26,7 +26,6 @@ int main(int argc, char *argv[])
     printf("\n%s\n\n", "create a sub-directory");
 
     system("ls -l");
-*/
 
     return 0;
 }

@@ -1,5 +1,11 @@
 //programme for lab4table2()
-//your information goes below
+/***************************************
+* EECS2031AC – Lab4 *
+* Author: Rahman, Mahfuz *
+* Email: mafu@my.yorku.ca *
+* eecs_username: mafu *
+* York num: 217847518 *
+****************************************/
 
 
 #include <stdio.h>
