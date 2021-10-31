@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 void swapIncre(int*, int*, int*);
+void swap(int**, int**);
 
 int main( ) {
   int a, b,c; 
@@ -22,11 +23,13 @@ int main( ) {
 
 //swap and also increment a,b,c
 void swapIncre(int *x, int *y, int *z){
-   int temp = *x;
-   *x = *z;
-   *z = temp;
-
+   swap(&x, &z);
    (*x) += 100;
    (*y) *= 2;
 }
 
+void swap(int **x, int **z){
+   int temp = **x;
+   **x = **z;
+   **z = temp;
+}
