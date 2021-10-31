@@ -95,7 +95,7 @@ main(){
   printf("x:%d\ty:%d\t*p:%d\t**pp:%d\n", x, y, *p, **pp);
 
   ptr++;  pp++;
-//  arr++;
+  //arr++;
 
 
 
