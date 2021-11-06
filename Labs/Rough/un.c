@@ -2,16 +2,10 @@
 
 int main(){
 
-    int a = 22;
-    int *p = &a;
-    *p = 24;
-    int *p2 = p;
-    int **p3 = &p2;
-    (*p2)++;
-    (**p3) += 10;
-
-    printf("%d %d %d %d", a, *p, *p2, **p3);
-
+    char arr[] = "EECS 2031A";
+    
+    char *p = arr;
+    printf("A %d\n", sizeof(p));
     
     
 

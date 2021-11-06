@@ -6,6 +6,7 @@
 * Yorku #:  217847518
 ****************************************/
 
+
 /* Passing an array to a function. */
 
 #include <stdio.h>
@@ -13,8 +14,8 @@
 #define MAX_INPUTS 20
  
 // more headers and the declarations, as needed
-void display(int *);
-int largest(int *);
+void display(int *, int);
+void largest(int *, int, int *);
 
  main(int argc, char *argv[])
  {
@@ -27,25 +28,25 @@ int largest(int *);
          *(array + count) = i;  // store in array[count] without using []
          count++;
      }
-     *(array + count) = -1;
 
 
       /* Call the function and display the return value. */
       printf("Inputs: ");
-      display(array);
+      display(array, count);
 
      
-     
-     printf("\nLargest value: %d\n", largest(array));
+     int largeNum;
+     largest(array, count, &largeNum);
+     printf("\nLargest value: %d\n", largeNum);
      
      return 0;
  }
  
  /* display content of an int array */
- void display(int *arr)
+ void display(int *arr, int index)
  {
      int i;
-     for(i=0; (*(arr+i)) != -1; i++){
+     for(i=0; i<index; i++){
          printf("%d ", *(arr+i));
      }
  }
@@ -54,16 +55,13 @@ int largest(int *);
 /* This Function largest() returns the largest value */
  /* in an int array */
 
- int largest(int * arr)
+ void largest(int * arr, int index, int *p)
  {
-     int i, j, l = *arr;
-     for(i=0; (*(arr+i)) != -1; i++){
-     }
-
-     for(j=0; j<i; j++){
-        if(l < *(arr+j)){
-            l = *(arr+j);
+     int i, l = *arr;
+     for(i=0; i<index; i++){
+         if(l < *(arr+i)){
+             l = *(arr+i);
+            }
         }
-     }
-     return l;
+    *p = l;
  }
