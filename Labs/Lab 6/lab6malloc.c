@@ -10,7 +10,7 @@ int  main()
   int n, i;
   printf("# of elements in int array: ");
   scanf("%d", &n);
-  int my_array[n];  
+  int *my_array = (int*) malloc(n* sizeof(int)); 
   
   *my_array = -10;
   for(i =1; i<n; i++)
@@ -18,11 +18,11 @@ int  main()
 
   printArr(my_array, n);
   
-/*  p = malloc(6 * sizeof(char));
-  .......   //complete this line so next line prints hello, 5 
+  p = malloc(6 * sizeof(char));
+  p = "hello";   
   printf("%s %d\n", p, strlen(p));
   *(p+2) = 'X';
-  printf("%s\n", p); */
+  printf("%s\n", p);
 
   return 0;
 }
